@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alikamran.netlify.app/sitemap.xml
+Sitemap: https://ali-kamran.com/sitemap.xml
