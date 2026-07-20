@@ -101,19 +101,25 @@ header{
 
 /* Results */
 .results .context{max-width:720px;font-size:17.5px;margin-bottom:8px;}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:36px 0;}
-@media(max-width:640px){.stats{grid-template-columns:1fr;}}
-.stat{background:var(--ink);padding:34px 28px;}
-.stat .n{font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,3.6vw,36px);font-weight:700;color:var(--green-bright);line-height:1.1;}
-.stat .l{margin-top:12px;color:var(--dim);font-size:15px;line-height:1.5;}
-.stat-wide{grid-column:1 / -1;}
+.arc{border:1px solid var(--line);margin:36px 0;}
+.arc-step{
+  display:grid;grid-template-columns:150px 190px 1fr;gap:28px;
+  padding:30px 32px;border-top:1px solid var(--line);align-items:start;
+}
+.arc-step:first-child{border-top:none;}
+.arc-when{
+  font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--gold);padding-top:7px;
+}
+.arc-n{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-size:clamp(26px,3.4vw,34px);color:var(--green-bright);line-height:1.15;
+}
+.arc-body h3{font-size:17px;margin-bottom:8px;}
+.arc-body p{color:var(--dim);font-size:15px;line-height:1.6;max-width:56ch;}
+@media(max-width:760px){.arc-step{grid-template-columns:1fr;gap:10px;padding:26px 24px;}}
 .results .kicker{max-width:720px;}
 .results .kicker strong{color:var(--gold);font-weight:600;}
-
-.chart-intro{max-width:720px;color:var(--dim);font-size:15px;line-height:1.6;margin:0 0 20px;}
-.proof-chart{margin:0 0 32px;border:1px solid var(--line);padding:20px 20px 16px;}
-.proof-chart svg{width:100%;height:auto;display:block;}
-.proof-chart figcaption{margin-top:14px;font-size:12.5px;color:var(--dim);}
 
 /* Audit offer */
 .audit-card{
@@ -217,6 +223,13 @@ header{
 .status b{color:var(--paper);font-weight:600;}
 
 footer{border-top:1px solid var(--line);padding:40px 0 32px;}
+.foot-links{
+  text-align:center;margin-bottom:14px;
+  font-family:'Space Grotesk',sans-serif;font-size:14px;
+}
+.foot-links a{color:var(--dim);text-decoration:none;transition:color .15s;}
+.foot-links a:hover{color:var(--gold);}
+.foot-sep{color:var(--gold);margin:0 12px;}
 .foot-line{
   color:var(--dim);font-size:13.5px;letter-spacing:0.06em;
   font-family:'Space Grotesk',sans-serif;
