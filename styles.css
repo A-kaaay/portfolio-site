@@ -120,6 +120,25 @@ header{
 @media(max-width:760px){.arc-step{grid-template-columns:1fr;gap:10px;padding:26px 24px;}}
 .results .kicker{max-width:720px;}
 .results .kicker strong{color:var(--gold);font-weight:600;}
+.case-box{
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+  margin-top:28px;padding:24px 28px;
+  border:1px solid var(--gold);background:rgba(255,180,0,0.04);
+  text-decoration:none;transition:background .15s;
+}
+.case-box:hover{background:rgba(255,180,0,0.09);}
+.case-box-label{
+  font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:6px;
+}
+.case-box-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:var(--paper);}
+.case-box-arrow{
+  font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;
+  color:var(--gold);white-space:nowrap;
+}
+@media(max-width:560px){
+  .case-box{flex-direction:column;align-items:flex-start;gap:14px;}
+}
 
 /* Audit offer */
 .audit-card{
@@ -195,6 +214,12 @@ header{
 /* About */
 .who p{max-width:680px;margin-bottom:16px;}
 .who .name{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;margin-bottom:14px;}
+.who-grid{display:grid;grid-template-columns:220px 1fr;gap:44px;align-items:start;}
+.who-photo{width:220px;height:220px;object-fit:cover;border:1px solid var(--line);border-radius:50%;filter:grayscale(0.15);}
+@media(max-width:700px){
+  .who-grid{grid-template-columns:1fr;gap:24px;}
+  .who-photo{width:140px;height:140px;}
+}
 
 /* FAQ */
 .faq{max-width:760px;}
