@@ -1,1 +1,6 @@
 .DS_Store
+
+# Local session-continuity notes for Claude — never deploy these
+CLAUDE.md
+LOG.md
+CONTENT-WORKFLOW.md

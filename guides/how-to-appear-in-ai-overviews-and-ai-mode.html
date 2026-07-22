@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xpgxrgj1ap");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Appear in AI Overviews and AI Mode | Ali Kamran</title>
+<meta name="description" content="A practical, source-checked guide to Google's own eligibility requirements, best practices, and measurement for AI Overviews and AI Mode, plus how to opt out with nosnippet, data-nosnippet, max-snippet, noindex and Google-Extended.">
+<link rel="canonical" href="https://ali-kamran.com/guides/how-to-appear-in-ai-overviews-and-ai-mode.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Appear in AI Overviews and AI Mode">
+<meta property="og:description" content="A practical, source-checked guide to Google's own eligibility requirements, best practices, and measurement for AI Overviews and AI Mode, plus how to opt out if you'd rather not appear.">
+<meta property="og:url" content="https://ali-kamran.com/guides/how-to-appear-in-ai-overviews-and-ai-mode.html">
+<meta property="og:image" content="https://ali-kamran.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ali-kamran.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B6W08Q974"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B6W08Q974');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Appear in AI Overviews and AI Mode",
+  "description": "A practical, source-checked guide to Google's own eligibility requirements, best practices, and measurement for AI Overviews and AI Mode, plus how to opt out with nosnippet, data-nosnippet, max-snippet, noindex and Google-Extended.",
+  "author": {"@type": "Person", "name": "Ali Kamran", "url": "https://ali-kamran.com/about.html"},
+  "publisher": {"@type": "Person", "name": "Ali Kamran", "url": "https://ali-kamran.com/"},
+  "datePublished": "2026-07-22",
+  "dateModified": "2026-07-22",
+  "image": "https://ali-kamran.com/og-image.png",
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ali-kamran.com/guides/how-to-appear-in-ai-overviews-and-ai-mode.html"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is there a technical checklist to get into AI Overviews specifically?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. Google states there are no additional technical requirements beyond normal Search eligibility: your page needs to be indexed, snippet-eligible, and meet standard Search technical requirements. Meeting all of that doesn't guarantee inclusion either — Google still decides case by case whether crawling, indexing, or serving a given page's content is warranted."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an llms.txt file or special AI markup to appear in AI Overviews?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. Google's own documentation says: \"You don't need to create new machine readable files, AI text files, or markup to appear in these features.\" Standard SEO fundamentals, not a new file format, are what matter."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do I see how much traffic AI Overviews send my site?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Search Console's Performance report includes AI Overview traffic under the \"Web\" search type, alongside regular search results. Google also notes that clicks arriving from results pages with AI Overviews tend to be higher quality, with users more likely to spend more time on the site."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do I keep a specific page out of AI Overviews without hurting its ranking?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Use nosnippet on the page, or max-snippet with a character limit if partial quoting is acceptable, or data-nosnippet on just the sensitive section. Adding noindex removes the page from Search entirely, including its normal ranking, not just its AI Overview eligibility — that's usually the wrong tool for this specific goal."}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="../index.html">ALI KAMRAN <span>/</span> SEO + GEO</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">← Back to site</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+      <li class="has-dropdown">
+        <a href="../blog.html">Resources</a>
+        <ul class="dropdown">
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../guides.html">Guides</a></li>
+        </ul>
+      </li>
+      <li><a href="../about.html">About Me</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li class="nav-cta-item"><a class="nav-cta" href="https://calendly.com/ali-kamran035/30min" target="_blank" rel="noopener">Book the audit</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="case-kicker">Guide</div>
+      <h1>How to appear in AI Overviews and AI Mode</h1>
+      <p class="dek">Google publishes exactly what determines whether your content can show up in AI Overviews and AI Mode, how to measure it, and how to opt a page out if you'd rather it didn't. Here's the whole thing, straight from the source, with nothing added that isn't there.</p>
+      <div class="byline">
+        <img class="byline-avatar" src="../headshot.jpeg" alt="Ali Kamran" width="40" height="40" loading="lazy">
+        <div>
+          <div class="byline-name">Written by <a href="../about.html">Ali Kamran</a></div>
+          <div class="byline-role">SEO &amp; GEO Consultant · Published July 22, 2026 · 8 min read</div>
+        </div>
+      </div>
+
+      <div class="article-banner">
+        <svg viewBox="0 0 900 380" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="255" cy="190" r="150" stroke-width="1" opacity="0.15"></circle>
+          <rect x="165" y="70" width="180" height="240" rx="10" stroke-width="1.4"></rect>
+          <line x1="195" y1="120" x2="315" y2="120" stroke-width="1.4" opacity="0.85"></line>
+          <line x1="195" y1="146" x2="315" y2="146" stroke-width="1.4" opacity="0.85"></line>
+          <line x1="195" y1="172" x2="285" y2="172" stroke-width="1.4" opacity="0.85"></line>
+          <line x1="195" y1="212" x2="315" y2="212" stroke-width="1.4" opacity="0.5"></line>
+          <line x1="195" y1="238" x2="270" y2="238" stroke-width="1.4" opacity="0.5"></line>
+          <path d="M300 46 L306 60 L320 66 L306 72 L300 86 L294 72 L280 66 L294 60 Z" fill="currentColor" stroke="none" opacity="0.9"></path>
+
+          <line x1="345" y1="130" x2="560" y2="105" stroke-width="1" stroke-dasharray="3 6" opacity="0.35"></line>
+          <line x1="345" y1="180" x2="560" y2="180" stroke-width="1" stroke-dasharray="3 6" opacity="0.35"></line>
+          <line x1="345" y1="230" x2="560" y2="255" stroke-width="1" stroke-dasharray="3 6" opacity="0.35"></line>
+          <line x1="345" y1="280" x2="560" y2="330" stroke-width="1" stroke-dasharray="3 6" opacity="0.35"></line>
+
+          <g>
+            <rect x="560" y="90" width="72" height="30" rx="15" stroke-width="1.3"></rect>
+            <circle cx="612" cy="105" r="10" fill="var(--gold)" stroke="none"></circle>
+            <line x1="644" y1="105" x2="700" y2="105" stroke-width="1.2" opacity="0.6"></line>
+          </g>
+          <g opacity="0.65">
+            <rect x="560" y="165" width="72" height="30" rx="15" stroke-width="1.3"></rect>
+            <circle cx="580" cy="180" r="10" stroke-width="1.3"></circle>
+            <line x1="644" y1="180" x2="690" y2="180" stroke-width="1.2" opacity="0.6"></line>
+          </g>
+          <g>
+            <rect x="560" y="240" width="72" height="30" rx="15" stroke-width="1.3"></rect>
+            <circle cx="596" cy="255" r="10" fill="var(--orange)" stroke="none"></circle>
+            <line x1="644" y1="255" x2="706" y2="255" stroke-width="1.2" opacity="0.6"></line>
+          </g>
+          <g>
+            <rect x="560" y="315" width="72" height="30" rx="15" stroke-width="1.3"></rect>
+            <circle cx="612" cy="330" r="10" fill="var(--green-bright)" stroke="none"></circle>
+            <line x1="644" y1="330" x2="696" y2="330" stroke-width="1.2" opacity="0.6"></line>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="article-layout">
+    <div class="wrap">
+      <div class="article-grid">
+
+        <aside class="toc-sticky">
+          <div class="toc-label">Table of Contents</div>
+          <ul>
+            <li><a href="#source">The source, and why it matters</a></li>
+            <li><a href="#how">How AI Overviews and AI Mode work</a></li>
+            <li><a href="#appear">How to appear: the actual requirements</a></li>
+            <li><a href="#measure">How to measure whether it's working</a></li>
+            <li><a href="#optout">How to opt a page out</a></li>
+            <li><a href="#troubleshoot">Troubleshooting a control that isn't taking effect</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </aside>
+
+        <div class="article-body">
+
+      <h2 id="source">The source, and why it matters</h2>
+      <p>Everything in this guide is drawn from one page: Google's own <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener">AI Features and Your Website</a>, last confirmed live and current as of July 22, 2026. It's the closest thing Google publishes to a direct answer for "what do I actually need to do to appear in AI Overviews." Most of what circulates as "GEO advice" is a paraphrase of this page, several links removed from the source, sometimes with invented requirements bolted on. This is the unparaphrased version, organized as a working guide instead of a wall of prose.</p>
+      <p>For the broader argument about why GEO is mostly SEO fundamentals and which popular tactics Google explicitly says do nothing, see the companion piece: <a href="../blog/what-google-says-about-ranking-in-ai-search.html">what Google actually says about ranking in AI answers</a>. This guide stays narrower and more operational: the specific requirements, the measurement, and the opt-out controls.</p>
+
+      <h2 id="how">How AI Overviews and AI Mode work</h2>
+      <p>Google draws a real distinction between the two features:</p>
+      <ul>
+        <li><b>AI Overviews</b> are "designed to show up on queries where they can add additional benefits beyond what people might already get on Search" — they help users grasp a topic quickly and offer jumping-off points to explore further.</li>
+        <li><b>AI Mode</b> is "particularly helpful for queries where further exploration, reasoning, or complex comparisons are needed" — built for the kind of question that used to take several separate searches.</li>
+      </ul>
+      <p>Both can use <b>query fan-out</b>: running several related searches across subtopics to build the response, which is why they can surface "a wider and more diverse set of helpful links" than a single classic search result page. Google is explicit that the two features "may use different models and techniques, so the set of responses and links they show will vary" — there's no single unified "AI ranking" to optimize for.</p>
+
+      <h2 id="appear">How to appear: the actual requirements</h2>
+      <p>Two separate questions, and Google answers both directly.</p>
+
+      <h3>Is there a special technical bar?</h3>
+      <p>No. <i>"There are no additional requirements to appear in AI Overviews or AI Mode, nor other special optimizations necessary."</i> A page needs to clear the same bar as regular Search: indexed, snippet-eligible, meeting standard Search technical requirements. Google adds an important caveat on top of that: clearing every requirement <i>"doesn't mean that Google will crawl, index, or serve its content"</i> in an AI feature specifically — eligibility isn't a guarantee, it's a floor.</p>
+
+      <h3>What's actually worth doing, then?</h3>
+      <p>The same SEO fundamentals that help everywhere else in Search, restated for this context:</p>
+      <ul>
+        <li>Allow crawling via robots.txt — an accidentally blocked page can't be considered for anything.</li>
+        <li>Use internal links so the page is actually discoverable.</li>
+        <li>Provide a good page experience.</li>
+        <li>Make the important content available as real text, not locked inside images or unrendered JavaScript.</li>
+        <li>Support the page with quality images and video where relevant.</li>
+        <li>Make sure structured data matches what's actually visible on the page.</li>
+        <li>Keep Merchant Center and Business Profile information current, if either applies.</li>
+      </ul>
+      <p>And the line that undercuts most paid "AI optimization" packages: <i>"You don't need to create new machine readable files, AI text files, or markup to appear in these features."</i></p>
+
+      <div class="box good">
+        <span class="box-label">Worth noticing</span>
+        <p>Nothing on this list is AI-specific. It's the same checklist a competent technical SEO audit already covers. That's Google's point, not mine.</p>
+      </div>
+
+      <h2 id="measure">How to measure whether it's working</h2>
+      <p>AI feature traffic isn't hidden in a separate tool. It shows up in <b>Search Console's Performance report, under the "Web" search type</b>, alongside your regular organic results. Worth watching specifically: Google notes that <i>"when people click from search results pages with AI Overviews, these clicks are higher quality"</i> — users arriving this way are more likely to spend more time on the site. Rankings and impressions can hold steady or climb while click-through rate falls, which is often the AI Overview absorbing the query before it reaches you rather than a ranking problem. I wrote about that exact pattern, and the fix that isn't a "GEO trick," in the <a href="../case-study.html">full case study</a>.</p>
+
+      <h2 id="optout">How to opt a page out</h2>
+      <p>The reverse question: a page ranks and you're fine with that, but you don't want it quoted, summarized, or used as raw material for an AI-generated answer. Google gives you precise, separate levers for this, documented on the same page plus its <a href="https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag" target="_blank" rel="noopener">robots meta tag reference</a>:</p>
+      <ul>
+        <li><b>nosnippet</b> — page-level. Blocks the page from being used as a snippet or as a direct input to AI Overviews and AI Mode, while it can still rank and appear as a link.</li>
+        <li><b>max-snippet:[number]</b> — a character limit instead of an on/off switch. Some quoting allowed, not the whole page as raw material.</li>
+        <li><b>data-nosnippet</b> — an HTML attribute on a specific <code>span</code>, <code>div</code>, or <code>section</code>. Protects one part of a page (pricing, a disclaimer) while the rest stays fully eligible.</li>
+        <li><b>noindex</b> — removes the page from Search entirely, AI features included. The most common mistake: reaching for this to solve a snippet problem, which also deletes the page's normal ranking traffic in the process.</li>
+        <li><b>Google-Extended</b> — a robots.txt token, unrelated to the four above. It only controls whether a page can be used to train or ground Gemini models elsewhere in Google's systems. Google states directly it <i>"does not impact a site's inclusion in Google Search nor is it used as a ranking signal in Google Search."</i> Blocking it has no effect on AI Overview or AI Mode eligibility, since both pull through the regular Googlebot path, not through Google-Extended.</li>
+      </ul>
+
+      <div class="box warn">
+        <span class="box-label">The mistake I see most often</span>
+        <p>Someone wants a page to keep ranking but never get quoted in an AI answer, and sets noindex. That removes the page from Search altogether — the ranking traffic disappears with the AI summary. nosnippet, max-snippet, or data-nosnippet solve that specific problem without touching the page's ranking eligibility. The reverse mistake also happens: setting Google-Extended and assuming it opts the page out of AI Overviews. It doesn't — that's a training-data control, not a Search-visibility control.</p>
+      </div>
+
+      <h2 id="troubleshoot">Troubleshooting a control that isn't taking effect</h2>
+      <p>If you've set nosnippet, max-snippet, or noindex and the change doesn't seem to be reflected, Google's documented process is:</p>
+      <ol>
+        <li>Verify the tag is implemented correctly using the URL Inspection Tool in Search Console.</li>
+        <li>Allow time for recrawling — Google notes this can take anywhere from several days to a few months.</li>
+        <li>If you changed the tag after it was already crawled, request a recrawl through Search Console rather than waiting indefinitely.</li>
+        <li>If it still isn't taking effect after that, Google's own next step is posting in the Search Central Help Community.</li>
+      </ol>
+      <p>Checking that none of these directives are set by accident — a stray noindex from a staging build, a nosnippet left on by a plugin default, a Google-Extended block someone added without knowing what it does — is a standard part of a technical audit. It catches pages quietly suppressed that you actually wanted visible, just as often as it catches the reverse.</p>
+
+      <div class="box info" id="faq">
+        <span class="box-label">FAQ</span>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Is there a technical checklist to get into AI Overviews specifically?</summary>
+          <div class="answer">No. Google states there are no additional technical requirements beyond normal Search eligibility: your page needs to be indexed, snippet-eligible, and meet standard Search technical requirements. Meeting all of that doesn't guarantee inclusion either — Google still decides case by case whether crawling, indexing, or serving a given page's content is warranted.</div>
+        </details>
+        <details>
+          <summary>Do I need an llms.txt file or special AI markup to appear in AI Overviews?</summary>
+          <div class="answer">No. Google's own documentation says: "You don't need to create new machine readable files, AI text files, or markup to appear in these features." Standard SEO fundamentals, not a new file format, are what matter.</div>
+        </details>
+        <details>
+          <summary>How do I see how much traffic AI Overviews send my site?</summary>
+          <div class="answer">Search Console's Performance report includes AI Overview traffic under the "Web" search type, alongside regular search results. Google also notes that clicks arriving from results pages with AI Overviews tend to be higher quality, with users more likely to spend more time on the site.</div>
+        </details>
+        <details>
+          <summary>How do I keep a specific page out of AI Overviews without hurting its ranking?</summary>
+          <div class="answer">Use nosnippet on the page, or max-snippet with a character limit if partial quoting is acceptable, or data-nosnippet on just the sensitive section. Adding noindex removes the page from Search entirely, including its normal ranking, not just its AI Overview eligibility — that's usually the wrong tool for this specific goal.</div>
+        </details>
+      </div>
+
+      <p style="font-size:13px;color:var(--dim);margin-top:36px;">Source: <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener">AI Features and Your Website</a>, Google Search Central. Accessed July 22, 2026.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="article-endcap">
+    <div class="wrap">
+      <div class="author-strip">
+        <img src="../headshot.jpeg" alt="Ali Kamran" loading="lazy">
+        <div>
+          <div class="name">Ali Kamran</div>
+          <div class="role">SEO &amp; GEO Consultant · <a href="../about.html" style="color:var(--gold);">More about my background →</a></div>
+        </div>
+      </div>
+
+      <div class="takeaway">
+        <span class="box-label">Work with me</span>
+        <p style="margin-bottom:24px;">
+          <b style="color:var(--paper);">A proper audit checks exactly this stuff</b>
+          — actual AI Overview eligibility, and whether any of these controls are set by accident, suppressing a page you meant to keep visible.
+        </p>
+        <div class="cta-row">
+          <a class="btn gold" href="https://calendly.com/ali-kamran035/30min" target="_blank" rel="noopener">Book the audit (USD 450)</a>
+          <a class="btn ghost" href="../guides.html">More guides</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav class="foot-links" aria-label="Contact">
+      <a href="mailto:hello@ali-kamran.com">hello@ali-kamran.com</a>
+      <span class="foot-sep">&middot;</span>
+      <a href="https://www.linkedin.com/in/ali-kamran-/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+    <div class="foot-line">Based in Karachi, working across time zones.</div>
+  </div>
+</footer>
+
+<script src="../nav.js" defer></script>
+</body>
+</html>

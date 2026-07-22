@@ -122,12 +122,22 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">ALI KAMRAN <span>/</span> SEO + GEO</a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="case-study.html">Case Study</a></li>
+      <li class="has-dropdown">
+        <a href="blog.html">Resources</a>
+        <ul class="dropdown">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="guides.html">Guides</a></li>
+        </ul>
+      </li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="index.html#contact">Contact</a></li>
       <li class="nav-cta-item"><a class="nav-cta" href="https://calendly.com/ali-kamran035/30min" target="_blank" rel="noopener">Book the audit</a></li>
     </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -142,7 +152,7 @@
         <div class="about-kicker">About</div>
         <h1>Ali Kamran</h1>
         <div class="role"><b>SEO &amp; GEO Consultant</b> · Based in Karachi, working across time zones</div>
-        <p class="intro">Eleven years building organic channels from nothing, then proving they work with numbers, not vanity metrics.</p>
+        <p class="intro">Eleven years building organic channels from nothing, and now making sure they show up when buyers ask AI who to trust. Proven with numbers, not vanity metrics.</p>
         <div class="pill-row">
           <div class="pill"><b>11 years</b> in marketing</div>
           <div class="pill"><b>6 industries</b></div>
@@ -176,6 +186,10 @@
         <li>
           <div class="p-label">Proof</div>
           <div class="p-body"><b>I lead with numbers from one job, not a stitched-together highlight reel.</b> The <a href="case-study.html">case study</a> is a real, single engagement, from zero to a Fortune 500 customer.</div>
+        </li>
+        <li>
+          <div class="p-label">Honesty</div>
+          <div class="p-body"><b>No tricks, no secret AI levers.</b> A lot of what gets sold as "GEO" does nothing, and Google has said so directly. Getting recommended by AI is mostly the fundamentals done properly. I do those, and I tell you plainly what actually moves the needle and what's just hype.</div>
         </li>
         <li>
           <div class="p-label">Time zones</div>
@@ -278,5 +292,6 @@
     <div class="foot-line">Based in Karachi, working across time zones.</div>
   </div>
 </footer>
+<script src="nav.js" defer></script>
 </body>
 </html>

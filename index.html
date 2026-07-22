@@ -99,12 +99,22 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top">ALI KAMRAN <span>/</span> SEO + GEO</a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="case-study.html">Case Study</a></li>
+      <li class="has-dropdown">
+        <a href="blog.html">Resources</a>
+        <ul class="dropdown">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="guides.html">Guides</a></li>
+        </ul>
+      </li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="#contact">Contact</a></li>
       <li class="nav-cta-item"><a class="nav-cta" href="https://calendly.com/ali-kamran035/30min" target="_blank" rel="noopener">Book the audit</a></li>
     </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -113,12 +123,12 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <h1>I get B2B SaaS companies found on Google, <em>and inside AI answers.</em></h1>
-      <p class="lede">Your buyers now ask ChatGPT, Perplexity and Google's AI who to trust before they ever see your site. I make sure the answer includes you: technical SEO, content that ranks, and visibility inside AI search. Delivered personally, measured in demos booked, not dashboards.</p>
-      <p class="lede"><b>Start with a one-week, fixed-price audit.</b> You'll know exactly what's broken, what it costs you, and what to fix first, whether or not we ever work together again.</p>
+      <h1>Your buyers now ask AI who to trust. <em>You're not the answer yet.</em></h1>
+      <p class="lede">I build the Google and AI-search visibility that puts B2B SaaS companies in that answer, and turns it into booked demos. Delivered personally, measured in demos, not dashboards.</p>
+      <p class="lede"><b>Start with a one-week, fixed-price audit.</b> You'll know exactly what's broken, what it's costing you, and what to fix first, whether or not we ever work together again.</p>
       <div class="cta-row">
         <a class="btn gold" href="https://calendly.com/ali-kamran035/30min" target="_blank" rel="noopener">Book the audit (USD 450)</a>
-        <a class="btn ghost" href="#results">See the results first</a>
+        <a class="btn ghost" href="#results">See the proof first</a>
       </div>
     </div>
   </section>
@@ -165,6 +175,36 @@
         </div>
         <span class="case-box-arrow">Read it &rarr;</span>
       </a>
+    </div>
+  </section>
+
+  <!-- SOUND FAMILIAR -->
+  <section id="familiar">
+    <div class="wrap">
+      <div class="sec-label">Sound familiar</div>
+      <h2 class="sec-title">If any of these is your situation, we should talk</h2>
+      <div class="pains">
+        <div class="pain">
+          <div class="pain-q">We don't really have an organic channel. We have a blog nobody reads.</div>
+          <div class="pain-a">That's the exact situation I walk into and build out of. It's the whole specialty, not a side project.</div>
+        </div>
+        <div class="pain">
+          <div class="pain-q">We get some traffic, but none of it books demos.</div>
+          <div class="pain-a">You're ranking for browsers, not buyers. I build toward the searches people make right before they choose a vendor, and I measure the work in demos, not sessions.</div>
+        </div>
+        <div class="pain">
+          <div class="pain-q">Our buyers are asking ChatGPT now, and we have no idea if we show up.</div>
+          <div class="pain-a">Most companies don't. I check where you stand inside AI answers today, then restructure your content so those tools cite you instead of your competitor.</div>
+        </div>
+        <div class="pain">
+          <div class="pain-q">The last agency sent dashboards, then handed us to a junior.</div>
+          <div class="pain-a">Everything here is done by me, personally. No juniors, no account managers, no handoffs. That's why capacity is limited.</div>
+        </div>
+        <div class="pain">
+          <div class="pain-q">SEO feels like a black box we can't judge.</div>
+          <div class="pain-a">That's what the paid audit is for. One week in, you can see exactly what's wrong and what it's worth fixing, before you commit to anything ongoing.</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -240,6 +280,36 @@
     </div>
   </section>
 
+  <!-- FIT / NOT A FIT -->
+  <section id="fit">
+    <div class="wrap">
+      <div class="sec-label">Is this a fit</div>
+      <h2 class="sec-title">Not every B2B SaaS company should book this.</h2>
+      <div class="fit-grid">
+        <div class="fit-col good">
+          <h3>We're a fit if</h3>
+          <ul class="fit-list">
+            <li>You don't have a real organic channel yet, or inherited one that never worked</li>
+            <li>You're fine paying for the audit before anything else gets decided, instead of a free call that's secretly a sales pitch</li>
+            <li>You want the same person who wrote the report to also do the work, no handoff to a team afterward</li>
+            <li>You're comfortable with mostly-async collaboration, with real-time calls in your working hours</li>
+            <li>You'd rather hear "that GEO tactic is snake oil" than get sold one</li>
+            <li>You can commit to a three to six month build, not a 30-day test</li>
+          </ul>
+        </div>
+        <div class="fit-col bad">
+          <h3>We're not a fit if</h3>
+          <ul class="fit-list">
+            <li>You want a free strategy call before spending anything</li>
+            <li>You want "GEO" added as a checkbox, with nothing structural actually changing</li>
+            <li>You need a full team assigned on day one</li>
+            <li>You're chasing a ranking guarantee next month</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- TESTIMONIALS: uncomment and fill with REAL quotes from your LinkedIn recommendations.
        Do not paraphrase. Copy the actual words and attribute with name, role, company.
   <section id="testimonials">
@@ -278,7 +348,7 @@
       <div class="faq">
         <details>
           <summary>What is GEO?</summary>
-          <div class="answer">Generative Engine Optimization: making your company visible and cited when buyers ask AI tools (ChatGPT, Perplexity, Google AI Overviews) for recommendations. It overlaps with SEO but has its own rules: how your content is structured, where you're mentioned, and whether AI systems treat your site as a source worth citing.</div>
+          <div class="answer">Generative Engine Optimization: making your company visible and cited when buyers ask AI tools (ChatGPT, Perplexity, Google AI Overviews) for recommendations. Here's the honest version most people won't tell you: Google's own guidance says there's no secret markup or magic file for this. Showing up in AI answers is mostly the fundamentals done properly, structured so AI systems can lift your answer cleanly and trust the source. I do that, and I tell you plainly what actually moves the needle and what's just hype.</div>
         </details>
         <details>
           <summary>Why is the audit USD 450?</summary>
@@ -329,5 +399,6 @@
     <div class="foot-line">Based in Karachi, working across time zones.</div>
   </div>
 </footer>
+<script src="nav.js" defer></script>
 </body>
 </html>
