@@ -10,13 +10,13 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog | Ali Kamran — SEO & GEO for B2B SaaS</title>
-<meta name="description" content="Writing on B2B SaaS SEO, GEO and AI-search visibility, grounded in real experience and primary sources, not recycled listicles.">
-<link rel="canonical" href="https://ali-kamran.com/blog.html">
-<meta property="og:title" content="Blog | Ali Kamran — SEO & GEO for B2B SaaS">
-<meta property="og:description" content="Writing on B2B SaaS SEO, GEO and AI-search visibility, grounded in real experience and primary sources, not recycled listicles.">
+<title>Ask a Question | Ali Kamran</title>
+<meta name="description" content="Have a question before booking the audit? Send it here and I'll reply personally, usually within one to two business days.">
+<link rel="canonical" href="https://ali-kamran.com/ask.html">
+<meta property="og:title" content="Ask a Question | Ali Kamran">
+<meta property="og:description" content="Have a question before booking the audit? Send it here and I'll reply personally, usually within one to two business days.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ali-kamran.com/blog.html">
+<meta property="og:url" content="https://ali-kamran.com/ask.html">
 <meta property="og:image" content="https://ali-kamran.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -40,22 +40,8 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ali-kamran.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ali-kamran.com/blog.html"}
+    {"@type": "ListItem", "position": 2, "name": "Ask a Question", "item": "https://ali-kamran.com/ask.html"}
   ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Blog | Ali Kamran",
-  "url": "https://ali-kamran.com/blog.html",
-  "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "url": "https://ali-kamran.com/blog/what-google-says-about-ranking-in-ai-search.html", "name": "What Google Actually Says About Ranking in AI Answers"}
-    ]
-  }
 }
 </script>
 </head>
@@ -85,28 +71,48 @@
 <main id="top">
   <section class="res-hero">
     <div class="wrap">
-      <div class="case-kicker">Blog</div>
-      <h1 class="sec-title" style="margin-bottom:14px;">What's actually happening in search, not what agencies are selling</h1>
-      <p class="dek">Analysis grounded in primary sources and real client data, written when there's something worth saying, not on a content calendar.</p>
+      <div class="case-kicker">Contact</div>
+      <h1 class="sec-title" style="margin-bottom:14px;">Ask a question</h1>
+      <p class="dek">Not ready to book the audit yet, or just want something clarified first? Send it here. I read and reply to these myself, usually within one to two business days.</p>
     </div>
   </section>
 
   <section style="padding-top:0;">
     <div class="wrap">
-      <div class="float-grid">
-        <a class="float-card" href="blog/what-google-says-about-ranking-in-ai-search.html">
-          <div class="card-panel">
-            <div class="panel-top-row">
-              <span class="panel-chip">Blog</span>
-              <span class="panel-mark">AK</span>
-            </div>
-            <h3 class="panel-title">What Google actually says about ranking in AI answers</h3>
+      <div class="ask-grid">
+        <form class="form-card" name="ask" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thank-you.html">
+          <input type="hidden" name="form-name" value="ask">
+          <p class="hp-field">
+            <label>Leave this field blank<input name="bot-field"></label>
+          </p>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
           </div>
-          <div class="card-body">
-            <p class="card-excerpt">Google publishes its own guidance on AI Overviews and AI Mode. Most "GEO agencies" ignore it. Here's what it actually says, and which popular tactics it explicitly debunks.</p>
-            <div class="card-meta">Jul 2026 &middot; 7 min read <span class="arrow">&rarr;</span></div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
           </div>
-        </a>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn gold">Send question</button>
+          <p class="form-note">Goes straight to me, not a team inbox. If it's urgent, <a href="https://calendly.com/ali-kamran035/30min" target="_blank" rel="noopener" style="color:var(--gold);">book an intro call</a> instead.</p>
+        </form>
+
+        <aside class="ask-sidebar">
+          <img class="av" src="headshot.jpeg" alt="Ali Kamran" width="56" height="56" loading="lazy">
+          <h3>Ali Kamran</h3>
+          <div class="role">SEO &amp; GEO Consultant</div>
+          <p>No support team, no auto-responder. Whatever you send lands directly in my inbox, and I answer it myself.</p>
+          <ul>
+            <li>Usually a reply within one to two business days</li>
+            <li>No sales follow-up unless you ask for one</li>
+            <li>Good for questions about the audit, pricing, or fit before you book</li>
+          </ul>
+          <a class="sidebar-cta" href="https://calendly.com/ali-kamran035/30min" target="_blank" rel="noopener">Prefer to talk? Book a call</a>
+        </aside>
       </div>
     </div>
   </section>

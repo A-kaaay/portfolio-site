@@ -31,8 +31,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ali-kamran.com/guides/how-to-increase-ai-visibility.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ali-kamran.com/guides/how-to-appear-in-ai-overviews-and-ai-mode.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ali-kamran.com/ask.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
